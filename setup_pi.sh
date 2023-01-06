@@ -26,4 +26,4 @@ cd docker_images/ros/humble/ubuntu/jammy/ros-base
 docker build -t ros2 .
 
 echo "done."
-echo "type `docker run -it ros2` to run ros2"
+echo "type `docker run -it -v /home/kev/cubie-1:/ros2 ros2` to run ros2"
