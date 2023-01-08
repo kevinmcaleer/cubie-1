@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  ros2:
+    build: .
+    # restart: no
+    ports: 
+      - "3332:3332"
+    volumes:
+      - /home/kev/ros:/home/ros
+      - /home/kev/cubie-1:/ros2
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    tty: true
