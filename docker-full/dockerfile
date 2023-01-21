@@ -30,4 +30,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends ros-humble-navigation2 
 RUN apt-get install nano -y --no-install-recommends
-RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
+RUN sudo echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
