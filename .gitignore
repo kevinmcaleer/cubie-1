@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 build
 install
 log
@@ -6,3 +7,9 @@ rplidar/rplidar_ros2/install
 rplidar/rplidar_ros2/log
 rplidar/*
 rplidar_ros2/build/*
+=======
+*build*
+*install*
+*log*
+.DS_Store
+>>>>>>> 2e95c0d158e92e1a67af19e059f853e9e42f8f18
