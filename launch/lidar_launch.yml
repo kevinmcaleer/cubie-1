@@ -4,11 +4,9 @@ launch:
     pkg: "rplidar_ros"
     exec: "rplidar_composition"
     name: "lidar"
-    # namespace: "lidar"
 
 - node:
     pkg: "tf2_ros"
     exec: "static_transform_publisher"
     name: "transform"
-    # namespace: "lidar"
     args: "0 0 0 0 0 0 laser_frame world"
