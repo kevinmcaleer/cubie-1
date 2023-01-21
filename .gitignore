@@ -1,3 +1,8 @@
 build
 install
 log
+rplidar/rplidar_ros2/build
+rplidar/rplidar_ros2/install
+rplidar/rplidar_ros2/log
+rplidar/*
+rplidar_ros2/build/*

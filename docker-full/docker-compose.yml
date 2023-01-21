@@ -11,9 +11,15 @@ services:
     #   - "32662:32662"
     #   - "32663:32663"
     network_mode: host
+    ipc: host
+#    runtime: nvidia
     volumes:
       - /home/kev/ros:/home/ros
       - /home/kev/cubie-1:/ros2
-    # devices:
-      # - /dev/ttyUSB0:/dev/ttyUSB0
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
     tty: true
+    environment:
+      - DISPLAY
+#      - NVIDIA_VISIBLE_DEVICES=all
+#      - NVIDIA_DRIVER_CAPABILITIES=all
